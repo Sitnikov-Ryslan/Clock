@@ -1,0 +1,25 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #091921;
+
+    &.light {
+        background: #d1dae3;
+    }
+}
+
+@import 'blocks/clock.less';
+@import 'blocks/hour.less';
+@import 'blocks/min.less';
+@import 'blocks/sec.less';
+@import 'blocks/toggleClass.less';

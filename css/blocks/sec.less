@@ -1,0 +1,27 @@
+// main: ../style.less
+
+.sec, .sc {
+    width: 230px;
+    height: 230px;
+}
+
+.sec {
+    position: absolute;
+}
+
+.sc {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+
+    &:before {
+        content: '';
+        position: absolute;
+        width: 2px;
+        height: 150px;
+        background: #008eff;
+        z-index: 12;
+        border-radius: 6px 6px 0 0;
+    }
+}
